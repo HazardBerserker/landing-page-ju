@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Ateliê Tia Ju | Ajustes, Consertos e Roupas Sob Medida</title>
-  <meta name="description" content="Ateliê de costura da Jucélia Oliveira (Tia Ju): troca de zíper, barra de calça, ajuste de cintura, troca de forro, consertos e confecção de roupas sob medida com acabamento de alta costura. Orçamento rápido pelo WhatsApp.">
+  <title>Ateliê Tia Ju | Ajustes e Consertos de Roupas</title>
+  <meta name="description" content="Ateliê de costura da Jucélia Oliveira (Tia Ju): troca de zíper, barra de calça, ajuste de cintura, troca de forro, consertos e reformas de roupas com acabamento de alta costura. Orçamento rápido pelo WhatsApp.">
   <meta name="author" content="Jucélia Aparecida de Oliveira">
   <meta name="theme-color" content="#F8D7DA">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -15,8 +15,8 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Ateliê Tia Ju">
-  <meta property="og:title" content="Ateliê Tia Ju | Ajustes, Consertos e Roupas Sob Medida">
-  <meta property="og:description" content="Costura artesanal com acabamento de ateliê: zíper, barra, ajustes, forro, consertos e peças sob medida. Peça seu orçamento pelo WhatsApp.">
+  <meta property="og:title" content="Ateliê Tia Ju | Ajustes e Consertos de Roupas">
+  <meta property="og:description" content="Costura artesanal com acabamento de ateliê: zíper, barra, ajustes, forro, consertos e reformas. Peça seu orçamento pelo WhatsApp.">
   <meta property="og:url" content="https://www.seudominio.com.br/">
   <meta property="og:image" content="https://www.seudominio.com.br/assets/img/og-image.jpg">
   <meta property="og:image:width" content="1200">
@@ -37,16 +37,16 @@
 
   <script>document.documentElement.classList.add('js');</script>
 
-  <!-- Dados estruturados (SEO local). TROCAR: telephone, url e, se quiser, incluir "address" com a cidade -->
+  <!-- Dados estruturados (SEO local). TROCAR: url e, se quiser, incluir "address" com a cidade -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Ateliê Tia Ju",
-    "description": "Ajustes, consertos e confecção de roupas sob medida com acabamento de alta costura.",
+    "description": "Ajustes, consertos e reformas de roupas com acabamento de alta costura.",
     "url": "https://www.seudominio.com.br/",
     "image": "https://www.seudominio.com.br/assets/img/og-image.jpg",
-    "telephone": "+55 00 00000-0000",
+    "telephone": "+55 11 97590-7639",
     "founder": { "@type": "Person", "name": "Jucélia Aparecida de Oliveira" },
     "priceRange": "$",
     "hasOfferCatalog": {
@@ -58,7 +58,7 @@
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ajuste de cintura e caimento" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Troca de forro de jaquetas e casacos" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Consertos e reformas de roupas" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Confecção de roupas sob medida" } }
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ajuste de blazers, paletós e casacos" } }
       ]
     }
   }
@@ -354,9 +354,8 @@
     .works__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-flow: dense; gap: 2rem 1.25rem; }
     .work { display: flex; flex-direction: column; }
     .work--tall .work__btn { aspect-ratio: 3 / 4; }
-    .work--wide { grid-column: span 2; }
-    .work--wide .work__btn { aspect-ratio: 16 / 10; }
-    .work--tall img, .work--wide img { height: 100%; object-fit: cover; }
+    .work--land .work__btn { aspect-ratio: 4 / 3; }
+    .work--tall img, .work--land img { height: 100%; object-fit: cover; }
     .work__btn {
       display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; text-align: left;
       border-radius: var(--radius); overflow: hidden; position: relative;
@@ -613,7 +612,7 @@
       .process__aside { position: static; }
 
       .works__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .work--pair { grid-column: span 2; }
+      .work--pair, .work--land { grid-column: span 2; }
 
       .about { grid-template-columns: 1fr; }
       .about__inset { right: -8%; }
@@ -629,8 +628,7 @@
       .courses span { text-align: left; }
       .footer__grid { grid-template-columns: 1fr; }
       .works__grid { grid-template-columns: 1fr; }
-      .work--pair, .work--wide { grid-column: auto; }
-      .work--wide .work__btn { aspect-ratio: 4 / 3; }
+      .work--pair, .work--land { grid-column: auto; }
       .wa-float span { display: none; }
       .tape { height: 38px; }
       .tape__track span { font-size: 9px; }
@@ -708,10 +706,10 @@
       <div class="hero__left">
         <div class="hero__content">
           <p class="eyebrow" data-reveal>Ateliê de costura · Jucélia Oliveira</p>
-          <h1 id="hero-title" data-reveal style="--d:.08s">Ajustes, Consertos e <em>Criação de Roupas</em> Sob Medida</h1>
-          <p class="hero__lead" data-reveal style="--d:.16s">Costura artesanal com acabamento de ateliê. A Tia Ju ajusta, conserta e cria peças com o cuidado de quem conhece cada ponto — para a sua roupa vestir do jeito certo.</p>
+          <h1 id="hero-title" data-reveal style="--d:.08s">Consertos e Ajustes <em>de Roupas</em></h1>
+          <p class="hero__lead" data-reveal style="--d:.16s">Costura artesanal com acabamento de ateliê. A Tia Ju conserta e ajusta suas peças com o cuidado de quem conhece cada ponto — para a sua roupa vestir do jeito certo.</p>
           <div class="hero__actions" data-reveal style="--d:.24s">
-            <a class="btn btn--solid" href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20Tia%20Ju!%20Gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+            <a class="btn btn--solid" href="https://wa.me/5511975907639?text=Ol%C3%A1%2C%20Tia%20Ju!%20Gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">
               Pedir orçamento no WhatsApp
               <svg aria-hidden="true"><use href="#i-arrow"/></svg>
             </a>
@@ -772,8 +770,8 @@
     <!-- =============== FAIXA =============== -->
     <div class="ribbon" aria-hidden="true">
       <div class="ribbon__track">
-        <div class="ribbon__group"><span class="ribbon__item">Troca de zíper</span><span class="ribbon__dot"></span><span class="ribbon__item">Barra de calça</span><span class="ribbon__dot"></span><span class="ribbon__item">Ajuste de cintura</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de forro</span><span class="ribbon__dot"></span><span class="ribbon__item">Consertos &amp; reformas</span><span class="ribbon__dot"></span><span class="ribbon__item">Sob medida</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de zíper</span><span class="ribbon__dot"></span><span class="ribbon__item">Barra de calça</span><span class="ribbon__dot"></span><span class="ribbon__item">Ajuste de cintura</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de forro</span><span class="ribbon__dot"></span><span class="ribbon__item">Consertos &amp; reformas</span><span class="ribbon__dot"></span><span class="ribbon__item">Sob medida</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de zíper</span><span class="ribbon__dot"></span><span class="ribbon__item">Barra de calça</span><span class="ribbon__dot"></span><span class="ribbon__item">Ajuste de cintura</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de forro</span><span class="ribbon__dot"></span><span class="ribbon__item">Consertos &amp; reformas</span><span class="ribbon__dot"></span><span class="ribbon__item">Sob medida</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de zíper</span><span class="ribbon__dot"></span><span class="ribbon__item">Barra de calça</span><span class="ribbon__dot"></span><span class="ribbon__item">Ajuste de cintura</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de forro</span><span class="ribbon__dot"></span><span class="ribbon__item">Consertos &amp; reformas</span><span class="ribbon__dot"></span><span class="ribbon__item">Sob medida</span><span class="ribbon__dot"></span></div>
-        <div class="ribbon__group"><span class="ribbon__item">Troca de zíper</span><span class="ribbon__dot"></span><span class="ribbon__item">Barra de calça</span><span class="ribbon__dot"></span><span class="ribbon__item">Ajuste de cintura</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de forro</span><span class="ribbon__dot"></span><span class="ribbon__item">Consertos &amp; reformas</span><span class="ribbon__dot"></span><span class="ribbon__item">Sob medida</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de zíper</span><span class="ribbon__dot"></span><span class="ribbon__item">Barra de calça</span><span class="ribbon__dot"></span><span class="ribbon__item">Ajuste de cintura</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de forro</span><span class="ribbon__dot"></span><span class="ribbon__item">Consertos &amp; reformas</span><span class="ribbon__dot"></span><span class="ribbon__item">Sob medida</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de zíper</span><span class="ribbon__dot"></span><span class="ribbon__item">Barra de calça</span><span class="ribbon__dot"></span><span class="ribbon__item">Ajuste de cintura</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de forro</span><span class="ribbon__dot"></span><span class="ribbon__item">Consertos &amp; reformas</span><span class="ribbon__dot"></span><span class="ribbon__item">Sob medida</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de zíper</span><span class="ribbon__dot"></span><span class="ribbon__item">Barra de calça</span><span class="ribbon__dot"></span><span class="ribbon__item">Ajuste de cintura</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de forro</span><span class="ribbon__dot"></span><span class="ribbon__item">Consertos &amp; reformas</span><span class="ribbon__dot"></span><span class="ribbon__item">Sob medida</span><span class="ribbon__dot"></span></div>
+        <div class="ribbon__group"><span class="ribbon__item">Troca de zíper</span><span class="ribbon__dot"></span><span class="ribbon__item">Barra de calça</span><span class="ribbon__dot"></span><span class="ribbon__item">Ajuste de cintura</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de forro</span><span class="ribbon__dot"></span><span class="ribbon__item">Consertos &amp; reformas</span><span class="ribbon__dot"></span><span class="ribbon__item">Ajuste de blazer</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de zíper</span><span class="ribbon__dot"></span><span class="ribbon__item">Barra de calça</span><span class="ribbon__dot"></span><span class="ribbon__item">Ajuste de cintura</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de forro</span><span class="ribbon__dot"></span><span class="ribbon__item">Consertos &amp; reformas</span><span class="ribbon__dot"></span><span class="ribbon__item">Ajuste de blazer</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de zíper</span><span class="ribbon__dot"></span><span class="ribbon__item">Barra de calça</span><span class="ribbon__dot"></span><span class="ribbon__item">Ajuste de cintura</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de forro</span><span class="ribbon__dot"></span><span class="ribbon__item">Consertos &amp; reformas</span><span class="ribbon__dot"></span><span class="ribbon__item">Ajuste de blazer</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de zíper</span><span class="ribbon__dot"></span><span class="ribbon__item">Barra de calça</span><span class="ribbon__dot"></span><span class="ribbon__item">Ajuste de cintura</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de forro</span><span class="ribbon__dot"></span><span class="ribbon__item">Consertos &amp; reformas</span><span class="ribbon__dot"></span><span class="ribbon__item">Ajuste de blazer</span><span class="ribbon__dot"></span></div>
+        <div class="ribbon__group"><span class="ribbon__item">Troca de zíper</span><span class="ribbon__dot"></span><span class="ribbon__item">Barra de calça</span><span class="ribbon__dot"></span><span class="ribbon__item">Ajuste de cintura</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de forro</span><span class="ribbon__dot"></span><span class="ribbon__item">Consertos &amp; reformas</span><span class="ribbon__dot"></span><span class="ribbon__item">Ajuste de blazer</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de zíper</span><span class="ribbon__dot"></span><span class="ribbon__item">Barra de calça</span><span class="ribbon__dot"></span><span class="ribbon__item">Ajuste de cintura</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de forro</span><span class="ribbon__dot"></span><span class="ribbon__item">Consertos &amp; reformas</span><span class="ribbon__dot"></span><span class="ribbon__item">Ajuste de blazer</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de zíper</span><span class="ribbon__dot"></span><span class="ribbon__item">Barra de calça</span><span class="ribbon__dot"></span><span class="ribbon__item">Ajuste de cintura</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de forro</span><span class="ribbon__dot"></span><span class="ribbon__item">Consertos &amp; reformas</span><span class="ribbon__dot"></span><span class="ribbon__item">Ajuste de blazer</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de zíper</span><span class="ribbon__dot"></span><span class="ribbon__item">Barra de calça</span><span class="ribbon__dot"></span><span class="ribbon__item">Ajuste de cintura</span><span class="ribbon__dot"></span><span class="ribbon__item">Troca de forro</span><span class="ribbon__dot"></span><span class="ribbon__item">Consertos &amp; reformas</span><span class="ribbon__dot"></span><span class="ribbon__item">Ajuste de blazer</span><span class="ribbon__dot"></span></div>
       </div>
     </div>
 
@@ -784,7 +782,7 @@
           <p class="eyebrow">Serviços</p>
           <h2 id="servicos-title">Cuidado artesanal em <em>cada ponto</em></h2>
           <svg class="squiggle" viewBox="0 0 120 14" aria-hidden="true"><path pathLength="1" d="M2 7 C 12 1, 22 13, 32 7 S 52 1, 62 7 S 82 13, 92 7 S 112 1, 118 7"/></svg>
-          <p>Do conserto rápido à peça criada do zero: cada serviço é feito à mão, com prova e acabamento conferido antes da entrega.</p>
+          <p>Do pequeno reparo à reforma completa: cada serviço é feito à mão, com prova e acabamento conferido antes da entrega.</p>
         </header>
 
         <div class="services__grid">
@@ -831,9 +829,9 @@
           <article class="card card--feature" data-reveal style="--d:.16s">
             <svg class="card__line" aria-hidden="true"><rect x="0" y="0" width="100%" height="100%" rx="18" pathLength="1"/></svg>
             <div class="card__top"><span class="card__num">06</span><span class="card__icon"><svg aria-hidden="true"><use href="#s-dressform"/></svg></span></div>
-            <h3>Costura e Confecção do Zero</h3>
-            <p>Peças sob medida criadas a partir das suas medidas — modelagem, corte e costura — além de peças artesanais para a casa.</p>
-            <ul class="card__tags" aria-label="Etapas"><li>Modelagem</li><li>Corte</li><li>Sob medida</li></ul>
+            <h3>Ajuste de Alfaiataria</h3>
+            <p>Blazers, paletós e casacos estruturados ajustados em mangas, ombros, laterais e comprimento — preservando o acabamento original.</p>
+            <ul class="card__tags" aria-label="Peças atendidas"><li>Blazers</li><li>Paletós</li><li>Casacos</li></ul>
           </article>
         </div>
       </div>
@@ -909,14 +907,21 @@
             </button>
             <figcaption><b>Jeans</b> Barra com pesponto e acabamento de fábrica.</figcaption>
           </figure>
-          <figure class="work work--wide" data-reveal>
+          <figure class="work work--land" data-reveal>
+            <button class="work__btn" type="button" data-curtain data-lightbox aria-label="Ampliar foto: blazer feminino preto">
+              <img src="assets/img/blazer-preto.webp" width="1000" height="753" loading="lazy" decoding="async"
+                   alt="Blazer feminino preto com lapela, botões pretos e bolsos com portinhola, vestido em um manequim sobre camiseta branca, ao lado do letreiro Cantinho da Costura em parede azul.">
+            </button>
+            <figcaption><b>Alfaiataria</b> Blazer feminino com acabamento de alta costura.</figcaption>
+          </figure>
+          <figure class="work work--land" data-reveal style="--d:.08s">
             <button class="work__btn" type="button" data-curtain data-lightbox aria-label="Ampliar foto: panos de prato artesanais">
               <img src="assets/img/panos-de-prato.webp" width="900" height="677" loading="lazy" decoding="async"
                    alt="Cinco panos de prato natalinos feitos à mão, com barrados estampados de bolas, bico-de-papagaio e boneco de neve, bordado inglês branco e fitas de cetim.">
             </button>
             <figcaption><b>Artesanal</b> Panos de prato com bordado inglês e fitas.</figcaption>
           </figure>
-          <aside class="works__cta" data-reveal style="--d:.08s">
+          <aside class="works__cta" data-reveal style="--d:.16s">
             <div>
               <h3>Tem uma peça <em>parada no armário?</em></h3>
               <p>Mande uma foto pelo WhatsApp e descubra o que dá para ajustar, consertar ou transformar.</p>
@@ -942,7 +947,7 @@
           <h2 id="processo-title" style="font-size:clamp(2.3rem,5vw,3.9rem);margin-top:1rem">Simples, do jeito <em>que tem que ser</em></h2>
           <svg class="squiggle" viewBox="0 0 120 14" aria-hidden="true"><path pathLength="1" d="M2 7 C 12 1, 22 13, 32 7 S 52 1, 62 7 S 82 13, 92 7 S 112 1, 118 7"/></svg>
           <ul class="perks" aria-label="Diferenciais">
-            <li><span class="perks__icon"><svg aria-hidden="true"><use href="#i-award"/></svg></span>Formação em modelagem, corte e alta costura</li>
+            <li><span class="perks__icon"><svg aria-hidden="true"><use href="#i-award"/></svg></span>Formação em conserto de roupas e alta costura</li>
             <li><span class="perks__icon"><svg aria-hidden="true"><use href="#i-heart"/></svg></span>Atendimento personalizado, olho no olho</li>
             <li><span class="perks__icon"><svg aria-hidden="true"><use href="#i-chat"/></svg></span>Orçamento rápido e sem compromisso</li>
             <li><span class="perks__icon"><svg aria-hidden="true"><use href="#i-fabric"/></svg></span>Cuidado com cada tecido, do jeans à pelúcia</li>
@@ -956,8 +961,8 @@
             <div class="step__index" aria-hidden="true"><i><b>1</b><span>/3</span></i></div>
             <div class="step__body">
               <p class="step__label">Etapa 1 de 3</p>
-              <h3>Traga a peça ou suas medidas</h3>
-              <p>Mande uma mensagem com fotos e conte o que precisa. Combinamos o melhor horário para você trazer a peça ou tirar as medidas.</p>
+              <h3>Traga a sua peça</h3>
+              <p>Mande uma mensagem com fotos e conte o que precisa. Combinamos o melhor horário para você trazer a peça e fazer a prova.</p>
             </div>
           </li>
           <li class="step" data-reveal>
@@ -1075,14 +1080,14 @@
             <h2 id="contato-title">Orçamento rápido pelo <em>WhatsApp</em></h2>
             <p class="contact__lead">Envie uma foto da peça e conte o que precisa. A resposta é rápida e o orçamento, sem compromisso.</p>
             <ul class="contact__info">
-              <li><svg aria-hidden="true"><use href="#i-chat"/></svg><span><small>WhatsApp</small><a href="https://wa.me/5500000000000" target="_blank" rel="noopener">(00) 00000-0000</a></span></li>
+              <li><svg aria-hidden="true"><use href="#i-chat"/></svg><span><small>WhatsApp</small><a href="https://wa.me/5511975907639" target="_blank" rel="noopener">(11) 97590-7639</a></span></li>
               <li><svg aria-hidden="true"><use href="#i-clock"/></svg><span><small>Horário</small>Atendimento com hora marcada — combine pelo WhatsApp</span></li>
               <li><svg aria-hidden="true"><use href="#i-pin"/></svg><span><small>Localização</small>Ateliê em casa — endereço enviado no agendamento</span></li>
             </ul>
           </div>
 
           <!-- Sem JS, o formulário ainda abre o WhatsApp com o campo "text"; com JS, monta a mensagem completa -->
-          <form class="form" id="wa-form" action="https://wa.me/5500000000000" method="get" target="_blank">
+          <form class="form" id="wa-form" action="https://wa.me/5511975907639" method="get" target="_blank">
             <h3>Monte sua mensagem</h3>
             <p class="form__hint">Preencha e enviaremos direto para o WhatsApp.</p>
             <div class="field">
@@ -1097,7 +1102,7 @@
                 <option>Ajuste de cintura e caimento</option>
                 <option>Troca de forro</option>
                 <option>Conserto ou reforma</option>
-                <option>Peça sob medida</option>
+                <option>Ajuste de blazer ou casaco</option>
                 <option>Outro</option>
               </select>
             </div>
@@ -1128,7 +1133,7 @@
             <span class="logo__name">Ateliê <em>Tia Ju</em></span>
             <span class="logo__tag">Costura &amp; Ajustes</span>
           </a>
-          <p>Ajustes, consertos e roupas sob medida por Jucélia Aparecida de Oliveira.</p>
+          <p>Ajustes e consertos de roupas por Jucélia Aparecida de Oliveira.</p>
         </div>
         <div>
           <p class="footer__title">Navegação</p>
@@ -1142,7 +1147,7 @@
         <div>
           <p class="footer__title">Contato</p>
           <ul>
-            <li><a href="https://wa.me/5500000000000" target="_blank" rel="noopener">WhatsApp (00) 00000-0000</a></li>
+            <li><a href="https://wa.me/5511975907639" target="_blank" rel="noopener">WhatsApp (11) 97590-7639</a></li>
             <li>Atendimento com hora marcada</li>
           </ul>
         </div>
@@ -1158,7 +1163,7 @@
     </div>
   </footer>
 
-  <a class="wa-float" href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20Tia%20Ju!%20Gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+  <a class="wa-float" href="https://wa.me/5511975907639?text=Ol%C3%A1%2C%20Tia%20Ju!%20Gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
     <svg aria-hidden="true"><use href="#i-chat"/></svg><span>Orçamento</span>
   </a>
 
@@ -1173,8 +1178,8 @@
   <script>
   (() => {
     'use strict';
-    // TROCAR: número do WhatsApp com DDI + DDD, só dígitos (também aparece nos links do HTML)
-    const WHATSAPP = '5500000000000';
+    // Número do WhatsApp com DDI + DDD, só dígitos (também aparece nos links do HTML)
+    const WHATSAPP = '5511975907639';
 
     const $ = (s, el = document) => el.querySelector(s);
     const $$ = (s, el = document) => [...el.querySelectorAll(s)];
