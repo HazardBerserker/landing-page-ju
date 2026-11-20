@@ -439,6 +439,9 @@
     .courses { margin-top: 1rem; border-top: 1px solid var(--line); }
     .courses li { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; padding: .9rem 0; border-bottom: 1px solid var(--line); }
     .courses strong { font-family: var(--serif); font-weight: 600; font-size: 1.15rem; color: var(--wine); line-height: 1.25; }
+    .courses__btn { all: unset; box-sizing: border-box; width: 100%; display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; cursor: zoom-in; }
+    .courses__btn:hover strong { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+    .courses__btn:focus-visible { outline: 2px solid var(--wine); outline-offset: 4px; border-radius: 4px; }
     .courses span { font-size: .78rem; color: var(--muted); text-align: right; flex: none; }
     .about__actions { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 1rem; }
 
@@ -631,7 +634,7 @@
       .step__index { width: 64px; height: 64px; }
       .step__index b { font-size: 1.6rem; }
       .steps__track { left: 32px; }
-      .courses li { flex-direction: column; gap: .2rem; }
+      .courses li, .courses__btn { flex-direction: column; gap: .2rem; }
       .courses span { text-align: left; }
       .footer__grid { grid-template-columns: 1fr; }
       .works__grid { grid-template-columns: 1fr; }
@@ -724,7 +727,7 @@
             <a class="link-arrow" href="#servicos">Ver serviços <svg width="16" height="16" aria-hidden="true"><use href="#i-down"/></svg></a>
           </div>
           <ul class="hero__facts" data-reveal style="--d:.32s" aria-label="Destaques">
-            <li><svg aria-hidden="true"><use href="#i-star"/></svg>Formação em alta costura</li>
+            <li><svg aria-hidden="true"><use href="#i-star"/></svg>Certificada em conserto de roupas</li>
             <li><svg aria-hidden="true"><use href="#i-star"/></svg>Atendimento personalizado</li>
             <li><svg aria-hidden="true"><use href="#i-star"/></svg>Orçamento sem compromisso</li>
           </ul>
@@ -759,7 +762,7 @@
             <p class="sticker__text"><strong>Atendimento Personalizado</strong><span>Feito pra você</span></p>
           </div>
 
-          <a class="chip chip--cert" href="#sobre"><svg aria-hidden="true"><use href="#i-award"/></svg>5 certificados em costura</a>
+          <a class="chip chip--cert" href="#sobre"><svg aria-hidden="true"><use href="#i-award"/></svg>4 formações em costura</a>
           <a class="chip chip--works" href="#trabalhos">Ver antes &amp; depois <svg aria-hidden="true"><use href="#i-down"/></svg></a>
         </div>
 
@@ -955,7 +958,7 @@
           <h2 id="processo-title" style="font-size:clamp(2.3rem,5vw,3.9rem);margin-top:1rem">Simples, do jeito <em>que tem que ser</em></h2>
           <svg class="squiggle" viewBox="0 0 120 14" aria-hidden="true"><path pathLength="1" d="M2 7 C 12 1, 22 13, 32 7 S 52 1, 62 7 S 82 13, 92 7 S 112 1, 118 7"/></svg>
           <ul class="perks" aria-label="Diferenciais">
-            <li><span class="perks__icon"><svg aria-hidden="true"><use href="#i-award"/></svg></span>Formação em conserto de roupas e alta costura</li>
+            <li><span class="perks__icon"><svg aria-hidden="true"><use href="#i-award"/></svg></span>Cursos de costura, conserto e alta costura</li>
             <li><span class="perks__icon"><svg aria-hidden="true"><use href="#i-heart"/></svg></span>Atendimento personalizado, olho no olho</li>
             <li><span class="perks__icon"><svg aria-hidden="true"><use href="#i-chat"/></svg></span>Orçamento rápido e sem compromisso</li>
             <li><span class="perks__icon"><svg aria-hidden="true"><use href="#i-fabric"/></svg></span>Cuidado com cada tecido, do jeans à pelúcia</li>
@@ -1024,10 +1027,10 @@
 
           <h3>Formação</h3>
           <ul class="courses">
-            <li><strong>Essência — Modelagem, Corte e Costura</strong><span>Curso completo</span></li>
-            <li><strong>Conserto de Roupas</strong><span>Treinamento · 2 turmas</span></li>
-            <li><strong>Blazer Feminino em Alta Costura</strong><span>Escola de moda</span></li>
-            <li><strong>Calça e Colete em Alta Costura</strong><span>Escola de moda</span></li>
+            <li><button class="courses__btn" type="button" data-lightbox-src="assets/img/cert-essencia.webp" data-lightbox-alt="Certificado de conclusão do curso Essência - Modelagem, Corte e Costura, da Sivest Cursos de Corte e Costura, em nome de Jucélia Aparecida de Oliveira, 05/08/2024." data-lightbox-caption="Essência — Modelagem, Corte e Costura"><strong>Essência — Modelagem, Corte e Costura</strong><span>Sivest Cursos de Corte e Costura · 2024</span></button></li>
+            <li><button class="courses__btn" type="button" data-lightbox-src="assets/img/cert-conserto-2.webp" data-lightbox-alt="Certificado do Treinamento Conserto de Roupas Lucrativo, ministrado pela professora Carine Martins, 10 horas, em nome de Jucélia Aparecida de Oliveira." data-lightbox-caption="Treinamento Conserto de Roupas Lucrativo"><strong>Treinamento Conserto de Roupas Lucrativo</strong><span>Prof.ª Carine Martins · 10 h · 2026</span></button></li>
+            <li><button class="courses__btn" type="button" data-lightbox-src="assets/img/cert-blazer.webp" data-lightbox-alt="Certificado de participação no evento Blazer Feminino em Alta Costura, 8 horas, de 29 de julho a 1º de agosto de 2024, Escola de Moda Silvio Gervasoni." data-lightbox-caption="Blazer Feminino em Alta Costura"><strong>Blazer Feminino em Alta Costura</strong><span>Escola de Moda Silvio Gervasoni · evento · 8 h · 2024</span></button></li>
+            <li><button class="courses__btn" type="button" data-lightbox-src="assets/img/cert-calca-colete.webp" data-lightbox-alt="Certificado de participação no evento Calça e Colete em Alta Costura, 8 horas, de 23 a 26 de setembro de 2024, Escola de Moda Silvio Gervasoni." data-lightbox-caption="Calça e Colete em Alta Costura"><strong>Calça e Colete em Alta Costura</strong><span>Escola de Moda Silvio Gervasoni · evento · 8 h · 2024</span></button></li>
           </ul>
 
           <div class="about__actions">
